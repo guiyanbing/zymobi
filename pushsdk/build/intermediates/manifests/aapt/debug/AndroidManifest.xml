@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.zywx.wbpalmstar.platform.push"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application android:label="@string/app_name" >
+
+        <!-- push -->
+        <service
+            android:name="org.zywx.wbpalmstar.platform.push.PushService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":push" />
+
+        <receiver
+            android:name="org.zywx.wbpalmstar.platform.push.PushBroadCastReceiver"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="org.zywx.wbpalmstar.platform.push.PushReceiver"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="org.zywx.push.receive" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

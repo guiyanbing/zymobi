@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+  <Button
+      android:id="@+id/btn_ed_text_subscribe"
+      android:text="初始化用户"
+      android:layout_width="300dp"
+      android:layout_height="100dp" />
+
+  <TextView
+      android:id="@+id/tv_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="20sp"
+      android:visibility="gone"
+      android:layout_gravity="center_vertical"/>
+  <EditText
+      android:id="@+id/ed_text"
+      android:layout_width="match_parent"
+      android:hint="设置别名"
+      android:visibility="gone"
+      android:layout_height="50dp" />
+  <Button
+      android:id="@+id/btn"
+      android:text="打开推送开关"
+      android:layout_width="300dp"
+      android:layout_height="100dp" />
+  <EditText
+      android:id="@+id/ed_text_account"
+      android:layout_width="match_parent"
+      android:hint="设置账号"
+
+      android:layout_height="50dp" />
+
+
+
+  <Button
+      android:id="@+id/btn_ed_text_account"
+      android:text="上报数据"
+      android:layout_width="300dp"
+      android:layout_height="100dp" />
+
+  <EditText
+      android:id="@+id/ed_text_subscribe"
+      android:layout_width="match_parent"
+      android:hint="设置账号"
+
+      android:layout_height="50dp" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/miliarbary/miliarbary.iml" filepath="$PROJECT_DIR$/miliarbary/miliarbary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pushlibrary/pushlibrary.iml" filepath="$PROJECT_DIR$/pushlibrary/pushlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pushsdk/pushsdk.iml" filepath="$PROJECT_DIR$/pushsdk/pushsdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zymobi.iml" filepath="$PROJECT_DIR$/zymobi.iml" />
+    </modules>
+  </component>
+</project>
